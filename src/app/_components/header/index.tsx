@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -56,13 +57,13 @@ export function Header() {
             <Menu className="w-6 h-6 text-cyan-400" />
           </SheetTrigger>
 
-          <SheetContent className="z-[9999]">
-            <SheetHeader>
-              <SheetTitle>
+          <SheetContent className="z-[9999] bg-gray-900 [&>button]:text-white">
+            <SheetHeader className="text-gray-50">
+              <SheetTitle className="text-gray-50">
                 Portifólio
               </SheetTitle>
 
-              <SheetDescription>
+              <SheetDescription className="text-gray-300">
                 Menu de seções do portifólio
               </SheetDescription>
             </SheetHeader>

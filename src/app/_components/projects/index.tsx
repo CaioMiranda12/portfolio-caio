@@ -63,7 +63,7 @@ export function Projects() {
   return (
     <section
       id="projetos"
-      className="py-20 bg-gray-950 text-white
+      className="py-20 bg-gray-900 text-white
       min-h-screen
       "
     >

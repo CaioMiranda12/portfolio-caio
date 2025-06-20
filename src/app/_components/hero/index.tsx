@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export function Hero() {
   return (
     <section
-      className="h-screen flex justify-center items-center bg-black"
+      className="h-screen flex justify-center items-center bg-gray-950"
     >
       <div className="container mx-auto px-4 text-center flex flex-col gap-2">
 
