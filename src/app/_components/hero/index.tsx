@@ -7,18 +7,11 @@ export function Hero() {
     >
       <div className="container mx-auto px-4 text-center flex flex-col gap-2">
 
-        <span className="text-gray-500 text-sm md:text-lg tracking-wide uppercase animate-fade-in">React & Next.js Developer</span>
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+        <span
+          className="text-gray-500 text-sm md:text-lg tracking-wide uppercase animate-fade-in"
         >
-          <h2
-            className="text-2xl md:text-4xl text-gray-100"
-          >
-            Olá! Me chamo <span className="text-cyan-400 font-bold">Caio Miranda</span>
-          </h2>
-        </motion.div> */}
+          React & Next.js Developer
+        </span>
 
         <h2
           className="text-2xl md:text-4xl text-gray-100 animate-slide-up opacity-0 delay-100"
