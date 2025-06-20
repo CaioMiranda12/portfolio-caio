@@ -1,9 +1,10 @@
+'use client'
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -11,8 +12,23 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Home, Mail, Menu, Presentation, User } from "lucide-react";
+import { useEffect, useState } from "react";
+import clsx from "clsx";
 
 export function Header() {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    }
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [])
 
   const navItems = [
     { href: '#inicio', label: 'Inicio', icon: <Home /> },
@@ -42,7 +58,16 @@ export function Header() {
   )
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-[999] flex items-center justify-center px-4 h-20">
+    <header
+      className={clsx(
+        "fixed top-0 right-0 left-0 z-[999] flex items-center justify-center px-4 h-20 transition-colors duration-300",
+        {
+          "bg-transparent": !isScrolled,
+          'bg-black/40 backdrop-blur-lg shadow-md': isScrolled
+        }
+      )}
+
+    >
       <div className="container mx-auto flex items-center justify-between">
         <h1 className="text-3xl font-bold text-gray-100">
           <span className="text-cyan-400">Caio</span>.Dev

@@ -63,9 +63,8 @@ export function Projects() {
   return (
     <section
       id="projetos"
-      className="py-20 bg-gray-900 text-white
-      min-h-screen
-      "
+      className="scroll-mt-20 py-20 bg-gray-900 text-white
+      min-h-screen"
     >
       <div className="container mx-auto px-4">
         <span className="text-cyan-400 text-sm uppercase tracking-widest block text-center mb-2">
