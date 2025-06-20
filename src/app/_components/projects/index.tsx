@@ -80,8 +80,9 @@ export function Projects() {
           {projectsData.map(item => (
             <div
               key={item.alt}
-              className="bg-gray-800 w-full rounded-xl overflow-hidden shadow-lg opacity-0 animate-slide-up"
+              className="bg-gray-800 w-full rounded-xl overflow-hidden shadow-lg  "
               style={{ animationDelay: '200ms' }}
+              data-aos='fade-up'
             >
               <Image
                 src={item.src}
