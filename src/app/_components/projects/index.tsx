@@ -106,7 +106,7 @@ export function Projects() {
                     </Button>
                   </DialogTrigger>
 
-                  <DialogContent className="max-w-xl bg-gray-900">
+                  <DialogContent className="max-w-xl bg-gray-900 text-white">
                     <DialogHeader>
                       <DialogTitle className="text-cyan-400 font-semibold">Projeto: {item.name}</DialogTitle>
 
