@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -42,8 +43,11 @@ export function Hero() {
           data-aos-delay="500"
           data-aos-duration="800"
           data-aos-easing="ease-out"
+          asChild
         >
-          Saiba mais
+          <Link href='#projetos'>
+            Saiba mais
+          </Link>
         </Button>
       </div>
     </section>
