@@ -56,6 +56,7 @@ export function Skills() {
 
   return (
     <section
+      id="skills"
       className="scroll-mt-20 py-20 bg-gray-900 text-white"
     >
       <div
