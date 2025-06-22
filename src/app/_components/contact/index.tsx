@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export function Contact() {
   return (
     <section
+      id="contato"
       className="scroll-mt-20 py-20 bg-gray-950 text-white text-center"
     >
       <div
