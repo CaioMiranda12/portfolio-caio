@@ -35,31 +35,36 @@ export function Contact() {
         </p>
 
         <Button
+          asChild
           className="bg-cyan-500 hover:bg-cyan-400 py-3 px-6"
           data-aos='zoom-in'
           date-aos-delay='500'
         >
-          <Link
+          <a
             href='mailto:caiomiranda.contato1@gmail.com'
           >
             Enviar email
-          </Link>
+          </a>
         </Button>
 
         <div
           className="flex justify-center gap-6 mt-8"
         >
-          <Link
+          <a
             href='https://www.linkedin.com/in/caio-miranda-ofc/'
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedin className="text-gray-400 hover:text-white text-2xl" />
-          </Link>
+          </a>
 
-          <Link
+          <a
             href='https://github.com/CaioMiranda12'
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaGithub className="text-gray-400 hover:text-white text-2xl" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>
