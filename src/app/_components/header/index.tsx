@@ -11,13 +11,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Home, Mail, Menu, Presentation, User, Settings2, BadgeCheck } from "lucide-react";
+import { Home, Mail, Menu, Presentation, User, BadgeCheck } from "lucide-react";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 
 export function Header() {
-
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => {
@@ -44,8 +44,8 @@ export function Header() {
         <Button
           key={item.href}
           asChild
-          className="bg-transparent hover:bg-gray-800 text-cyan-400 hover:text-gray-100 text-base shadow-none
-          "
+          className="bg-transparent hover:bg-gray-800 text-cyan-400 hover:text-gray-100 text-base shadow-none"
+          onClick={() => setIsOpen(false)}
         >
           <Link
             href={item.href}
@@ -78,7 +78,7 @@ export function Header() {
           <NavLinks />
         </nav>
 
-        <Sheet>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger className="md:hidden bg-gray-800 p-2 rounded-md">
             <Menu className="w-6 h-6 text-cyan-400" />
           </SheetTrigger>
