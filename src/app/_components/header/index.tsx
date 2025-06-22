@@ -11,7 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Home, Mail, Menu, Presentation, User } from "lucide-react";
+import { Home, Mail, Menu, Presentation, User, Settings2, BadgeCheck } from "lucide-react";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 
@@ -32,8 +32,9 @@ export function Header() {
 
   const navItems = [
     { href: '#inicio', label: 'Inicio', icon: <Home /> },
-    { href: '#sobre', label: 'Sobre', icon: <User /> },
     { href: '#projetos', label: 'Projetos', icon: <Presentation /> },
+    { href: '#sobre', label: 'Sobre', icon: <User /> },
+    { href: '#skills', label: 'Skills', icon: <BadgeCheck /> },
     { href: '#contato', label: 'Contato', icon: <Mail /> },
   ]
 
