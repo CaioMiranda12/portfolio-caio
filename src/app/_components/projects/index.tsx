@@ -67,11 +67,18 @@ export function Projects() {
       min-h-screen"
     >
       <div className="container mx-auto px-4">
-        <span className="text-cyan-400 text-sm uppercase tracking-widest block text-center mb-2">
+        <span
+          className="text-cyan-400 text-sm uppercase tracking-widest block text-center mb-2"
+          data-aos='fade-up'
+        >
           Portfólio
         </span>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+        <h2
+          className="text-3xl md:text-4xl font-bold text-center mb-10"
+          data-aos='fade-up'
+          data-aos-delay='300'
+        >
           Projetos Recentes
         </h2>
 
