@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import { AOSInitializer } from "@/components/AOSInitializer";
+import { Toaster } from "sonner";
 
 
 const geistSans = Geist({
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <AOSInitializer />
         {children}
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );
