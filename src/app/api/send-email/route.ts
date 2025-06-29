@@ -1,8 +1,16 @@
+import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer'
 
 export async function POST(req: Request){
   try {
-    const { name, email, phonenumber, message} = await req.json();
+    const { name, email, phone, message} = await req.json();
+
+    if (!name || !email || !message || !phone) {
+    return new Response(
+        JSON.stringify({ success: false, message: "Campos obrigatórios faltando" }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
+  }
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -19,7 +27,7 @@ export async function POST(req: Request){
     html: `
       <p><strong>Nome:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Telefone:</strong> ${phonenumber}</p>
+      <p><strong>Telefone:</strong> ${phone}</p>
       <p><strong>Mensagem:</strong> ${message}</p>
     `
   }
@@ -27,15 +35,15 @@ export async function POST(req: Request){
   await transporter.sendMail(mailOptions)
 
   return new Response(
-    JSON.stringify({ success: true, message: "Email enviado com sucesso!"})
-  )
+      JSON.stringify({ success: true, message: "Email enviado com sucesso!" }),
+      { status: 200, headers: { "Content-Type": "application/json" } }
+    );
+  
   } catch (error) {
-    return new Response(
-      JSON.stringify({ success: false, message: "Erro ao enviar email."}),
-      { 
-        status: 500, 
-        headers: { "Content-Type": "application/json" }
-      }
-    )
+    console.log(error)
+     return new Response(
+      JSON.stringify({ success: false, message: "Erro ao enviar email." }),
+      { status: 500, headers: { "Content-Type": "application/json" } }
+    );
   }
 }

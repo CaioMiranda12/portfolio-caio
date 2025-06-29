@@ -22,25 +22,39 @@ export function Contact() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isValid },
+    formState: { errors, isSubmitting },
     reset,
   } = useForm<ContactSchema>({
     resolver: zodResolver(schema),
   })
-  const onSubmit = (data: ContactSchema) => {
-    console.log("Formulário válido:", data);
-    return new Promise<void>(resolve => {
-      setTimeout(() => {
-        toast.success('Mensagem enviada com sucesso!');
-        reset({
-          name: '',
-          email: '',
-          phone: '',
-          message: ''
-        }, { keepErrors: false });
-        resolve();
-      }, 1500)
-    })
+  const onSubmit = async (data: ContactSchema) => {
+    console.log(data)
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+
+      if (!res.ok) {
+        throw new Error('Erro ao enviar formulário');
+      }
+
+      return new Promise<void>(resolve => {
+        setTimeout(() => {
+          toast.success('Mensagem enviada com sucesso!');
+          reset({
+            name: '',
+            email: '',
+            phone: '',
+            message: ''
+          }, { keepErrors: false });
+          resolve();
+        }, 1500)
+      })
+    } catch (error) {
+      toast.error("Ocorreu um erro. Tente novamente.");
+    }
   }
 
   return (
