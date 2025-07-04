@@ -23,18 +23,20 @@ export function Projects() {
       description: `Desenvolvimento de um sistema completo para hamburguerias, com sistema de login, produtos, 
       usuários, e com funcionalidades para registrar pedidos em um banco de dados, visando a aplicação prática e 
       segura em empresas do setor. `,
-      skills: 'React, Styled-components, JavaScript, React Hooks, Material UI, API REST.',
+      skills: 'React, Styled-components, React Hooks, Material UI, API REST · Node.js/Express (PostgreSQL, MongoDB) com Docker.',
       summary: 'Sistema de pedidos para hamburguerias com registro no banco de dados e foco em uso real.',
       link: 'https://github.com/CaioMiranda12/brabosburger-interface',
+      link2: 'https://github.com/CaioMiranda12/brabosburger-api'
     },
     {
       name: 'FinDash$ - Dashboard Financeiro',
       src: BrabosBurger,
       alt: 'Imagem do projeto BrabosBurger2',
       description: 'Sistema de gestor financeiro, focado em usabilidade e visual agradável. Permite gerenciar transações, categorias e visualizar gráficos com resumos mensais e anuais.',
-      skills: 'React, Next.js, TypeScript, Tailwind CSS, ShadCN UI, Axios.',
+      skills: 'React, Next.js, TypeScript, Tailwind CSS, ShadCN UI, Axios · Node/Express (PostgreSQL).',
       summary: 'Gestor financeiro com visual limpo, controle de transações e gráficos de análise.',
-      link: 'https://github.com/CaioMiranda12/dashboard-interface'
+      link: 'https://github.com/CaioMiranda12/dashboard-interface',
+      link2: 'https://github.com/CaioMiranda12/brabosburger-api'
     },
     {
       name: 'Blog de Treinos',
@@ -148,13 +150,26 @@ export function Projects() {
                       <p className="text-sm text-gray-400">
                         Tecnologias: {item.skills}
                       </p>
-                      <Link
-                        href={item.link}
-                        target="_blank"
-                        className="text-cyan-400 hover:underline text-sm mt-4 inline-block"
-                      >
-                        Ver projeto →
-                      </Link>
+
+                      <div className="flex flex-col">
+                        <Link
+                          href={item.link}
+                          target="_blank"
+                          className="text-cyan-400 hover:underline text-sm mt-4 inline-block"
+                        >
+                          Ver projeto (Front-end) →
+                        </Link>
+
+                        {item.link2 && (
+                          <Link
+                            href={item.link2}
+                            target="_blank"
+                            className="text-cyan-400 hover:underline text-sm mt-6 inline-block"
+                          >
+                            Ver repositório de Back-End →
+                          </Link>
+                        )}
+                      </div>
                     </div>
                   </DialogContent>
                 </Dialog>

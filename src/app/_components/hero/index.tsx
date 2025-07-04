@@ -12,7 +12,7 @@ export function Hero() {
           className="text-gray-500 text-sm md:text-lg tracking-wide uppercase"
           data-aos='fade-in'
         >
-          React & Next.js Developer
+          React & Next.js Developer | Familiar with Node.js
         </span>
 
         <h2
