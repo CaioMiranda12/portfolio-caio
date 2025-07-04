@@ -44,7 +44,7 @@ export function About() {
             data-aos='fade-up'
             date-aos-delay='300'
           >
-            Me chamo Caio Miranda, sou desenvolvedor React/Next.js com foco em performance, acessibilidade e experiências fluídas. Atualmente, atuo como freelancer, criando interfaces modernas e otimizadas para negócios digitais.
+            Me chamo Caio Miranda, sou desenvolvedor React/Next.js com foco em performance, acessibilidade e experiências agradáveis. Atualmente, atuo como freelancer, criando interfaces modernas e otimizadas para negócios digitais.
           </p>
 
           <p
@@ -53,6 +53,15 @@ export function About() {
             date-aos-delay='500'
           >
             Tenho experiência com Tailwind CSS, integração com APIs REST, consumo de CMSs, e estou sempre buscando aprender novas ferramentas para entregar mais valor aos projetos.
+          </p>
+
+          <p
+            className="text-gray-400 leading-relaxed mb-6"
+            data-aos='fade-up'
+            date-aos-delay='600'
+          >
+            Além disso, também atuo como desenvolvedor full stack em projetos pessoais, com back-end em Node.js, Express e bancos de dados como PostgreSQL e MongoDB.
+
           </p>
 
           <Button
