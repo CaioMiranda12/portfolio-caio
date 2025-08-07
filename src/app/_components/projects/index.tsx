@@ -1,5 +1,12 @@
 import Image from "next/image";
 import BrabosBurger from '@/../public/brabosburger.png'
+import Findash from '@/../public/findash.png'
+import Blog from '@/../public/blog.png'
+import Decorar from '@/../public/decorar.png'
+import Spacegames from '@/../public/spacegames.png'
+import Black from '@/../public/black.webp'
+
+
 import { Button } from "@/components/ui/button";
 
 import {
@@ -30,7 +37,7 @@ export function Projects() {
     },
     {
       name: 'FinDash$ - Dashboard Financeiro',
-      src: BrabosBurger,
+      src: Findash,
       alt: 'Imagem do projeto BrabosBurger2',
       description: 'Sistema de gestor financeiro, focado em usabilidade e visual agradável. Permite gerenciar transações, categorias e visualizar gráficos com resumos mensais e anuais.',
       skills: 'React, Next.js, TypeScript, Tailwind CSS, ShadCN UI, Axios · Node/Express (PostgreSQL).',
@@ -40,7 +47,7 @@ export function Projects() {
     },
     {
       name: 'Blog de Treinos',
-      src: BrabosBurger,
+      src: Blog,
       alt: 'Imagem do projeto BrabosBurger3',
       description: 'Aplicação que permite aos usuários registrar, compartilhar e comentar sobre treinos. Inclui sistema de login com Google e recursos sociais para interação entre usuários. ',
       skills: 'React, Next.js, TypeScript, Tailwind CSS, Firebase.',
@@ -49,7 +56,7 @@ export function Projects() {
     },
     {
       name: 'Decorar - Ecommerce',
-      src: BrabosBurger,
+      src: Decorar,
       alt: 'Imagem do projeto BrabosBurger4',
       description: 'Um e-commerce de móveis e decoração com interface limpa e navegação intuitiva. Possui páginas de categorias, carrinho funcional e compra simplificada diretamente nos cards ou na página do produto.',
       skills: 'React, Next.js, Tailwind, AOS.',
@@ -58,7 +65,7 @@ export function Projects() {
     },
     {
       name: 'Space Games',
-      src: BrabosBurger,
+      src: Spacegames,
       alt: 'Imagem do projeto BrabosBurger5',
       description: 'Space Games é uma plataforma de jogos que mostra informações sobre os jogos mais em alta, com um sistema de recomendação e pesquisa de jogos. O projeto usa Next.js com App Router, garantindo um roteamento eficiente e otimizado para SEO.',
       skills: 'React, Next.js, Tailwind, Framer Motion.',
@@ -67,11 +74,11 @@ export function Projects() {
     },
     {
       name: 'Projeto 6',
-      src: BrabosBurger,
+      src: Black,
       alt: 'Imagem do projeto BrabosBurger6',
-      description: 'Meu site pessoal feito com Next.js e Tailwind. Responsivo, animado e otimizado.',
-      skills: 'React, Next.js, Tailwind, Framer Motion.',
-      summary: 'resumo do projeto',
+      description: 'Em andamento',
+      skills: '...',
+      summary: 'resumo do projeto em andamento',
       link: 'https://...'
     }
   ]
