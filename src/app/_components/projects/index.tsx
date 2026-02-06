@@ -73,13 +73,13 @@ export function Projects() {
       link: 'https://github.com/CaioMiranda12/spacegames'
     },
     {
-      name: 'Projeto 6',
+      name: 'Automação de Coleta de Dados com Python',
       src: Black,
-      alt: 'Imagem do projeto BrabosBurger6',
-      description: 'Em andamento',
-      skills: '...',
-      summary: 'resumo do projeto em andamento',
-      link: 'https://...'
+      alt: 'Imagem do projeto Automação de Coleta de Dados com Python',
+      description: 'Desenvolvimento de um script em Python para automação de navegação web utilizando Selenium, coleta de dados e manipulação de arquivos Excel com Pandas e OpenPyXL. O projeto tem como objetivo demonstrar habilidades práticas em automação, web scraping e manipulação de dados.',
+      skills: 'Python, Selenium, Pandas, OpenPyXL, Excel',
+      summary: 'Projeto desenvolvido com foco em aprendizado prático de Python, automação e manipulação de arquivos.',
+      link2: 'https://github.com/CaioMiranda12/automacao-python'
     }
   ]
 
@@ -159,13 +159,15 @@ export function Projects() {
                       </p>
 
                       <div className="flex flex-col">
-                        <Link
-                          href={item.link}
-                          target="_blank"
-                          className="text-cyan-400 hover:underline text-sm mt-4 inline-block"
-                        >
-                          Ver projeto (Front-end) →
-                        </Link>
+                        {item.link && (
+                          <Link
+                            href={item.link}
+                            target="_blank"
+                            className="text-cyan-400 hover:underline text-sm mt-4 inline-block"
+                          >
+                            Ver projeto (Front-end) →
+                          </Link>
+                        )}
 
                         {item.link2 && (
                           <Link
