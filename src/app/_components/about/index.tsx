@@ -36,7 +36,7 @@ export function About() {
             data-aos='fade-up'
             date-aos-delay='100'
           >
-            Desenvolvedor Front-End apaixonado por interfaces
+            Desenvolvedor Web com foco em Frontend e Backend
           </h2>
 
           <p
@@ -44,7 +44,7 @@ export function About() {
             data-aos='fade-up'
             date-aos-delay='300'
           >
-            Me chamo Caio Miranda, sou desenvolvedor React/Next.js com foco em performance, acessibilidade e experiências agradáveis. Atualmente, estou no sexto período de Ciência da Computação na FbUNI, e atuo como freelancer, criando interfaces modernas e otimizadas para negócios digitais.
+            Me chamo Caio Miranda e sou desenvolvedor web com experiência em React e Next.js no frontend e Node.js no backend, atuando na construção de aplicações completas, do layout à integração com APIs e banco de dados.
           </p>
 
           <p
@@ -52,7 +52,7 @@ export function About() {
             data-aos='fade-up'
             date-aos-delay='500'
           >
-            Tenho experiência com Tailwind CSS, integração com APIs REST, consumo de CMSs, e estou sempre buscando aprender novas ferramentas para entregar mais valor aos projetos.
+            Atualmente, curso Ciência da Computação na FbUNI e trabalho em projetos práticos que envolvem performance, acessibilidade e boas práticas de desenvolvimento.
           </p>
 
           <p
@@ -60,8 +60,15 @@ export function About() {
             data-aos='fade-up'
             date-aos-delay='600'
           >
-            Além disso, também atuo como desenvolvedor full stack em projetos pessoais, com back-end em Node.js, Express e bancos de dados como PostgreSQL e MongoDB.
+            Tenho experiência com Tailwind CSS, consumo e integração de APIs REST, versionamento com Git e bancos de dados como PostgreSQL e MongoDB.
+          </p>
 
+          <p
+            className="text-gray-400 leading-relaxed mb-6"
+            data-aos='fade-up'
+            date-aos-delay='700'
+          >
+            Além disso, venho direcionando meus estudos para backend e automação, buscando ampliar meus conhecimentos em Python e processos automatizados, sempre com foco em aprendizado contínuo e entrega de valor real.
           </p>
 
           <Button
