@@ -1,4 +1,4 @@
-import { FaHtml5 } from "react-icons/fa";
+import { FaHtml5, FaJava, FaPython } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
@@ -51,6 +51,14 @@ export function Skills() {
       name: 'Node',
       icon: <FaNodeJs className="w-10 h-10" />
     },
+    {
+      name: 'Python',
+      icon: <FaPython className="w-10 h-10" />
+    },
+    {
+      name: 'Java',
+      icon: <FaJava className="w-10 h-10" />
+    }
 
   ]
 
