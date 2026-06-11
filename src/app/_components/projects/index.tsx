@@ -24,7 +24,7 @@ export function Projects() {
 
   const projectsData = [
     {
-      name: 'Brabos Burger',
+      name: 'Brabos Burger2',
       src: BrabosBurger,
       alt: 'Imagem do projeto BrabosBurger',
       description: `Desenvolvimento de um sistema completo para hamburguerias, com sistema de login, produtos, 
